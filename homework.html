@@ -7,6 +7,10 @@
       .myHeading {
         color: red;
       }
+
+      .toggling-colors {
+        color: rgb(29, 146, 201)
+      }
     </style>
   <style type="text/css">
 @font-face {
@@ -49,7 +53,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
 </head>
   <body cz-shortcut-listen="true">
     <div>
-      <h1 id="newTitle">This is the title of the page</h1>
+      <h1 id="newTitle" onclick="makeItClickable()">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -180,6 +184,14 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
       const makeItClickable = function () {
         //
       };
+       /* EXERCISE 9
+        Make the heading of the page change color every time the user clicks on it.
+       */
+ 
+       const makeItClickable = function () {
+        let h1= document.getElementsByTagName ("h1")[0]
+        h1.classList.toggle("toggling-colors")
+       };
 
       /* EXERCISE 10
        Change the footer text with something else when the user clicks on it.
