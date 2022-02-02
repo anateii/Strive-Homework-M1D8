@@ -49,7 +49,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
 </head>
   <body cz-shortcut-listen="true">
     <div>
-      <h1>This is the title of the page</h1>
+      <h1 id="newTitle" >This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -91,9 +91,14 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
        Write a function for changing the title of the document in something else.
       */
 
-      const changeTitle = function (newTitle) {
-        //
+
+      
+        const changeTitle = function (newTitle) {
+        let title = document.getElementById("newTitle")
+        title.innerText= "Hello, I'm the new title"
       };
+
+      changeTitle()
 
       /* EXERCISE 2
        Write a function for changing the class of the title of the page in "myHeading".
