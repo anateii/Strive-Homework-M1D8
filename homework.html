@@ -49,7 +49,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
 </head>
   <body cz-shortcut-listen="true">
     <div>
-      <h1 id="newTitle" >This is the title of the page</h1>
+      <h1 id="newTitle">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -104,9 +104,11 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
        Write a function for changing the class of the title of the page in "myHeading".
       */
 
-      const addClassToTitle = function () {
-        //
-      };
+       const addClassToTitle = function () {
+         let newHeading = document.getElementById("newTitle").classList.add("myHeading")
+       };
+ 
+      addClassToTitle()
 
       /* EXERCISE 3
        Write a function for changing the text of only the p which are children of a div.
