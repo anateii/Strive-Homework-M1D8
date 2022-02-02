@@ -137,10 +137,25 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
       /* EXERCISE 6
        Write a function for adding a second paragraph to the first div.
       */
+       /* EXERCISE 6
+        Write a function for adding a second paragraph to the first div.
+       */
+ 
+       const addParagraph = function (content) {
+        let newParagraph = document.createElement ("p")
+        newParagraph.innerText = content
+      
+        let firstDiv = document.getElementById("first-div")
 
       const addParagraph = function (content) {
         //
       };
+       firstDiv.appendChild(newParagraph)
+
+       };
+ 
+      addParagraph("Hello Strivers")
+     
 
       /* EXERCISE 7
        Write a function for making the first unordered list disappear.
